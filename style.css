@@ -55,8 +55,6 @@ body {
 }
 
 .logo img {
-  border: 2px solid blueviolet;
-  border-radius: 5px;
   max-width: 100%;
   height: auto;
   transition: border-color 0.3s, max-width 0.3s ease;
