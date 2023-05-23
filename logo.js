@@ -3,6 +3,5 @@ window.addEventListener('DOMContentLoaded', function() {
     
     setTimeout(function() {
       logo.classList.add('animate');
-    }, 100); // Retrasa la animación por 1 segundo (ajusta el valor según tus necesidades)
+    }, 100); // 0.1s)
   });
-  // Obtener el elemento del logo
