@@ -75,7 +75,7 @@ body {
 
 .navbar a:hover,
 .navbar a.active {
-  color: blueviolet;
+  color: rgb(166, 201, 38);
 }
 
 .home {
@@ -122,7 +122,7 @@ body {
     align-items: center;
     width: 150px;
     height: 100%;
-    border: 2px solid blueviolet;
+    border: 2px solid rgb(119, 143, 35);
     border-radius: 8px;
     font-size: 19px;
     color: burlywood;
