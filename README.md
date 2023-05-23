@@ -1,2 +1,2 @@
 # aGodinoES
-My new poprtfolio to try to find a job ;)
+My new poprtfolio to try to improve my skills ;)

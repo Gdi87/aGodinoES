@@ -1,1 +1,234 @@
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(223, 206, 185);
+}
+
+body {
+  background: rgb(136, 180, 165);
+  color: #965757;
+  font-family: 'Offside', sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 25px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+  left: -80;
+  opacity: 0;
+  transition: opacity 1s;
+  animation: slide-in 1s forwards; /* animación de 1 segundo */
+}
+
+@keyframes slide-in {
+  0% {
+    left: -100px; /* posición inicial fuera de la página */
+  }
+  100% {
+    left: 0; /* posición final en el borde de la página */
+  }
+}
+.logo.show {
+    left: 0; /* posición final en el borde de la página */
+  }
+
+#logo.animate {
+  opacity: 1;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+  transition: border-color 0.3s, max-width 0.3s ease;
+}
+
+.logo img:hover {
+  border-color: rgb(162, 162, 184);
+}
+
+.navbar a {
+  font-size: 18px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: blueviolet;
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.home-content {
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.home-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.home-content h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: lightcyan;
+}
+
+.home-content p {
+  font-size: 16px;
+  margin: 20px 0 40px;
+}
+
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+    margin-left: 18%;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    border: 2px solid blueviolet;
+    border-radius: 8px;
+    font-size: 19px;
+    color: burlywood;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.btn-box a:nth-child(2) {
+  background: transparent;
+  color: burlywood;
+}
+
+.btn-box a:nth-child(2)::before {
+    color: bisque;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(173, 96, 96);
+    z-index: -1;
+    transition: 0.5s;
+}
+  
+  .btn-box a:hover::before {
+    width: 100%;
+  }
+
+@media (min-width: 768px) {
+  .home-content h1,
+  .home-content h3,
+  .home-content p,
+  .header .navbar a {
+    margin-left: calc(100px + 10px);
+  }
+}
+
+@media (max-width: 767px) {
+  .home-content h1,
+  .home-content h3,
+  .home-content p,
+  .header .navbar a {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    max-width: 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar a {
+    display: 40%;
+    margin-bottom: 10px;
+  }
+}
+.animate-from-right {
+    position: relative;
+    left: 100%; /* posición inicial fuera de la página */
+    animation: slide-in 1s forwards; /* animación de 1 segundo */
+  }
+  
+  @keyframes slide-in {
+    0% {
+      left: 100%; /* posición inicial fuera de la página */
+    }
+    100% {
+      left: 0; /* posición final en su lugar actual */
+    }
+  }
+  .home-content h1 {
+    animation-delay: 0.2s; /* Sin retraso para el primer elemento */
+  }
+  
+  .home-content h2 {
+    animation-delay: 0.2s; /* Retraso de 0.2 segundos para el segundo elemento */
+  }
+  
+  .home-content h3 {
+    animation-delay: 0.4s; /* Retraso de 0.4 segundos para el tercer elemento */
+  }
+  
+  .home-content p {
+    animation-delay: 0.6s; /* Retraso de 0.6 segundos para el cuarto elemento */
+  }
+  
+  
+  
+  
+  
+  
+  
+  
