@@ -18,7 +18,8 @@ body {
   left: 0;
   width: 100%;
   padding: 20px 10%;
-  background: transparent;
+  background-color: #c1e7b9c0;
+  color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,7 +67,7 @@ body {
 
 .navbar a {
   font-size: 18px;
-  color: #ededed;
+  color: #332222c0;
   text-decoration: none;
   font-weight: 500;
   margin-left: 35px;
