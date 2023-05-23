@@ -197,13 +197,13 @@ body {
 }
 .animate-from-right {
     position: relative;
-    left: 100%; /* posición inicial fuera de la página */
+    left: 150%; /* posición inicial fuera de la página */
     animation: slide-in 1s forwards; /* animación de 1 segundo */
   }
   
   @keyframes slide-in {
     0% {
-      left: 100%; /* posición inicial fuera de la página */
+      left: 150%; /* posición inicial fuera de la página */
     }
     100% {
       left: 0; /* posición final en su lugar actual */
