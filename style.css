@@ -40,7 +40,7 @@ body {
 
 @keyframes slide-in {
   0% {
-    left: -100px; /* posición inicial fuera de la página */
+    left: -500px; /* posición inicial fuera de la página */
   }
   100% {
     left: 0; /* posición final en el borde de la página */
