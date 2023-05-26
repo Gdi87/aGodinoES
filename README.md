@@ -1,5 +1,5 @@
 # aGodinoES
 
-My new poprtfolio to try to improve my skills ;)
+My new poprtfolio to learn modern web developing ;)
 
 html5+css+tailwind+js+react
