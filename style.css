@@ -10,6 +10,7 @@
   -webkit-text-size-adjust: 100%;
 }
 body{
+  display: 100%
   transition: 1.5s !important;
   background: #000000da;
   background-image: url("images/niebla.png");
